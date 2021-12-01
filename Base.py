@@ -23,3 +23,6 @@ df[df["Recuperado"].str.lower() == "Fallecido".lower()]["Recuperado"].count()
 
 # 7.Ordenar de Mayor a menor por tipo de caso
 df['Tipo de contagio'].value_counts()
+
+# 8.Número de departamentos afectados
+df['Nombre departamento'].nunique()
