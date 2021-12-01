@@ -49,3 +49,6 @@ df['Nombre municipio'].value_counts()[:10]
 # 15.Liste de mayor a menor los 10 municipios con mas casos de fallecidos
 df[df["Recuperado"].str.lower() == "Fallecido".lower()]
 ["Nombre municipio"].value_counts()[:10]
+
+# 16.Liste de mayor a menor los 10 municipios con mas casos de recuperados
+df[df["Recuperado"] == "Recuperado"]["Nombre municipio"].value_counts()[:10]
