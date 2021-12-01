@@ -8,4 +8,6 @@ df.count()["ID de caso"]
 # 2.Número de Municipios Afectados
 df['Nombre municipio'].nunique()
 
+# 3.Liste los municipios afectados (sin repetirlos)
+df['Nombre municipio'].unique()
 
