@@ -32,3 +32,6 @@ df['Nombre departamento'].unique()
 
 # 10.Ordene de mayor a menor por tipo de atención
 df['Tipo de recuperación'].value_counts()
+
+# 11.Liste de mayor a menor los 10 departamentos con mas casos de contagiados
+df['Nombre departamento'].value_counts()[:10]
