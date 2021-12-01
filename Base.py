@@ -29,3 +29,6 @@ df['Nombre departamento'].nunique()
 
 # 9.Liste los departamentos afectados(sin repetirlos)
 df['Nombre departamento'].unique()
+
+# 10.Ordene de mayor a menor por tipo de atención
+df['Tipo de recuperación'].value_counts()
