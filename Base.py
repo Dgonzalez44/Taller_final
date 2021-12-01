@@ -58,3 +58,16 @@ df[["Nombre departamento", " Nombre municipio"]].value_counts()
 
 # 18.Número de Mujeres y hombres contagiados por ciudad por departamento
 df[["Nombre departamento", " Nombre municipio", "Sexo"]].value_counts()
+
+# 19.promedio de edad de contagiados x hombre y mujeres x ciudad x departamento
+promCiudad = df.groupby
+(["Nombre departamento", "Nombre municipio", "Sexo"]).Edad.mean()
+print("Punto 19")
+print(promCiudad)
+print()
+
+promCiudad = df.groupby
+(['Nombre departamento', 'Nombre municipio', 'Sexo']).Edad.mean()
+print("Punto 19")
+print(promCiudad)
+print()
