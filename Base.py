@@ -39,3 +39,6 @@ df['Nombre departamento'].value_counts()[:10]
 # 12.Liste de mayor a menor los 10 departamentos con mas casos de fallecidos
 df[df["Recuperado"].str.lower() == "Fallecido".lower()]
 ["Nombre departamento"].value_counts()[:10]
+
+# 13.Liste de mayor a menor los 10 departamentos con mas casos de recuperados
+df[df["Recuperado"] == "Recuperado"]["Nombre departamento"].value_counts()[:10]
