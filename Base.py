@@ -55,3 +55,6 @@ df[df["Recuperado"] == "Recuperado"]["Nombre municipio"].value_counts()[:10]
 
 # 17.Liste agrupado por departamento y en orden de Mayor a menor las ciudades
 df[["Nombre departamento", " Nombre municipio"]].value_counts()
+
+# 18.Número de Mujeres y hombres contagiados por ciudad por departamento
+df[["Nombre departamento", " Nombre municipio", "Sexo"]].value_counts()
