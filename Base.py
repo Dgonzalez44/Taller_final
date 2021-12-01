@@ -26,3 +26,6 @@ df['Tipo de contagio'].value_counts()
 
 # 8.Número de departamentos afectados
 df['Nombre departamento'].nunique()
+
+# 9.Liste los departamentos afectados(sin repetirlos)
+df['Nombre departamento'].unique()
