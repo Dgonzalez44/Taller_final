@@ -4,3 +4,8 @@ df.head()
 
 # 1.Número de casos de Contagiados en el País.
 df.count()["ID de caso"]
+
+# 2.Número de Municipios Afectados
+df['Nombre municipio'].nunique()
+
+
