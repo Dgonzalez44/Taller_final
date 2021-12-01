@@ -20,3 +20,6 @@ df[df["Recuperado"] == "Recuperado"]["Recuperado"].count()
 
 # 6.Número de personas que ha fallecido
 df[df["Recuperado"].str.lower() == "Fallecido".lower()]["Recuperado"].count()
+
+# 7.Ordenar de Mayor a menor por tipo de caso
+df['Tipo de contagio'].value_counts()
