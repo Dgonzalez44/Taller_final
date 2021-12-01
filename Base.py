@@ -11,3 +11,5 @@ df['Nombre municipio'].nunique()
 # 3.Liste los municipios afectados (sin repetirlos)
 df['Nombre municipio'].unique()
 
+# 4. Número de personas que se encuentran en atención en casa
+df[df["Ubicación del caso"] == "casa"]["Ubicación del caso"].count()
