@@ -13,3 +13,7 @@ df['Nombre municipio'].unique()
 
 # 4. Número de personas que se encuentran en atención en casa
 df[df["Ubicación del caso"] == "casa"]["Ubicación del caso"].count()
+
+
+# 5.Número de personas que se encuentran recuperados
+df[df["Recuperado"] == "Recuperado"]["Recuperado"].count()
