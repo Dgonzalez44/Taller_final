@@ -17,3 +17,6 @@ df[df["Ubicación del caso"] == "casa"]["Ubicación del caso"].count()
 
 # 5.Número de personas que se encuentran recuperados
 df[df["Recuperado"] == "Recuperado"]["Recuperado"].count()
+
+# 6.Número de personas que ha fallecido
+df[df["Recuperado"].str.lower() == "Fallecido".lower()]["Recuperado"].count()
