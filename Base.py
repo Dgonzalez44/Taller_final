@@ -163,3 +163,15 @@ print()
 print("Punto 26")
 print(promedadCiu)
 print()
+
+# 27. curvas de contagio,muerte y recuperación de toda Colombia acumulados
+df.groupby('Fecha de diagnóstico').size().cumsum
+().plot(label="Contagios", figsize=(25, 10))
+Fallecidos = df[df['Ubicación del caso'] == 'Fallecido']
+Fallecidos.groupby('Fecha de diagnóstico').size().cumsum
+().plot(label="Fallecidos ", figsize=(25, 10))
+Recuperado = df[df['Recuperado'] == 'Recuperado']
+Recuperado.groupby('Fecha de diagnóstico').size().cumsum
+().plot(label="Recuperados", figsize=(25, 10))
+
+
