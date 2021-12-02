@@ -99,3 +99,25 @@ print("Punto 22")
 print(tasaMor)
 print(tasaRec)
 print()
+
+# 23.Liste la tasa de mortalidad y recuperación que tiene cada departamento
+tasaMorDept = (df[df['Ubicación del caso'] == 'Fallecido'].groupby
+               ('Nombre departamento').size().sort_values
+               (ascending=False)
+               / df[df['Ubicación del caso'] == 'Fallecido'].groupby
+               ('Nombre departamento').size().sort_values
+               (ascending=False).sum()) * 100
+tasaRecDept = (df[df['Recuperado'] == 'Recuperado'].groupby
+               ('Nombre departamento').size().sort_values
+               (ascending=False) / df[df['Recuperado'] == 'Recuperado'].groupby
+               ('Nombre departamento').size().sort_values
+               (ascending=False).sum()) * 100
+print("Punto 23")
+print(tasaMorDept)
+print(tasaRecDept)
+print()
+
+print("Punto 23")
+print(tasaMorDept)
+print(tasaRecDept)
+print()
