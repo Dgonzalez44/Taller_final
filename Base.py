@@ -153,3 +153,13 @@ print("Punto 25")
 print(atCiu)
 print()
 print()
+
+# 26. Liste el promedio de edad por sexo por cada ciudad de contagiados
+promedadCiu = df.groupby(['Nombre municipio', 'Sexo']).Edad.mean()
+print("Punto 26")
+print(promedadCiu)
+print()
+
+print("Punto 26")
+print(promedadCiu)
+print()
