@@ -71,3 +71,6 @@ promCiudad = df.groupby
 print("Punto 19")
 print(promCiudad)
 print()
+
+# 20.Liste de mayor a menor el número de contagiados por país de procedencia
+df['Nombre del país'].value_counts()[:10]
