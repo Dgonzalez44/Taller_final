@@ -239,4 +239,20 @@ print("Punto 30")
 print(falleEdad)
 print()
 
+# 31. Liste el porcentaje de personas por atención de toda Colombia
+porcAten = ((df.groupby('Ubicación del caso').size
+             ().sort_values(ascending=False))
+            / ((df.groupby('Ubicación del caso').size.sort_values
+                (ascending=False)).sum()))*100
+print("Punto 31")
+print(porcAten)
+print()
 
+porcAten = ((df.groupby('Ubicación del caso').size
+             ().sort_values(ascending=False))
+            / ((df.groupby('Ubicación del caso').size().sort_values
+                (ascending=False)).sum()))*100
+print("Punto 31")
+print(porcAten)
+print()
+print()
