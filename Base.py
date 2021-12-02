@@ -264,3 +264,8 @@ df.groupby(['Ubicación del caso']).size
 ().sort_values(ascending=False).plot(kind='bar')
 df.groupby(['Ubicación del caso']).size
 ().sort_values(ascending=False).plot(kind='bar')
+
+# 33. Haga un gráfico de barras por Sexo de toda Colombia
+df.groupby(['Sexo']).size().sort_values(ascending=False).plot(kind='bar')
+df.groupby(['Sexo']).size().sort_values(ascending=False).plot(kind='bar')
+df.groupby(['Sexo']).size().sort_values(ascending=False).plot(kind='bar')
