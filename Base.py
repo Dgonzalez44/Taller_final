@@ -74,3 +74,16 @@ print()
 
 # 20.Liste de mayor a menor el número de contagiados por país de procedencia
 df['Nombre del país'].value_counts()[:10]
+
+# 21.Liste de mayor a menor las fechas donde se presentaron mas contagios
+fechaContagios = df.groupby
+("Fecha de diagnóstico").size().sort_values(ascending=False)
+print("Punto 21")
+print(fechaContagios)
+print()
+
+fechaContagios = df.groupby
+("Fecha de diagnóstico").size().sort_values(ascending=False)
+print("Punto 21")
+print(fechaContagios)
+print()
