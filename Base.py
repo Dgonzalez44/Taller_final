@@ -256,3 +256,11 @@ print("Punto 31")
 print(porcAten)
 print()
 print()
+
+# 32. Haga un gráfico de barras por atención de toda Colombia
+df.groupby(['Ubicación del caso']).size
+().sort_values(ascending=False).plot(kind='bar')
+df.groupby(['Ubicación del caso']).size
+().sort_values(ascending=False).plot(kind='bar')
+df.groupby(['Ubicación del caso']).size
+().sort_values(ascending=False).plot(kind='bar')
