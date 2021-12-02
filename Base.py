@@ -275,3 +275,15 @@ df.groupby(['Tipo de contagio']).size
 ().sort_values(ascending=False).plot(kind='bar')
 df.groupby(['Tipo de contagio']).size
 ().sort_values(ascending=False).plot(kind='bar')
+
+# 35. Haga un gráfico de barras del número de contagiados, recuperados y,
+# fallecidos por fecha de toda Colombia
+df.groupby('Fecha de diagnóstico').size
+().plot(kind='bar', facecolor='red', figsize=(25, 10))
+Fallecidos = df[df['Ubicación del caso'] == 'Fallecido']
+Fallecidos.groupby('Fecha de diagnóstico').size
+().plot(kind='bar', facecolor='blue', figsize=(25, 10))
+Recuperado = df[df['Recuperado'] == 'Recuperado']
+Recuperado.groupby('Fecha de diagnóstico').size
+().plot(kind='bar', facecolor='green', figsize=(25, 10))
+(["Contagiados", "Fallecidos", "Recuperados"])
