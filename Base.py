@@ -287,3 +287,4 @@ Recuperado = df[df['Recuperado'] == 'Recuperado']
 Recuperado.groupby('Fecha de diagnóstico').size
 ().plot(kind='bar', facecolor='green', figsize=(25, 10))
 (["Contagiados", "Fallecidos", "Recuperados"])
+
