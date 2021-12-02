@@ -87,3 +87,15 @@ fechaContagios = df.groupby
 print("Punto 21")
 print(fechaContagios)
 print()
+
+# 22.Diga cual es la tasa de mortalidad y recuperación que tiene toda Colombia
+tasaMor = (len(df[df['Ubicación del caso'] == 'Fallecido']) / len(df)) * 100
+tasaRec = (len(df[df['Recuperado'] == 'Recuperado']) / len(df)) * 100
+print("Punto 22")
+print(tasaMor)
+print(tasaRec)
+
+print("Punto 22")
+print(tasaMor)
+print(tasaRec)
+print()
