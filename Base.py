@@ -205,3 +205,38 @@ Recuperado.groupby('Nombre departamento').size
 (10).plot(label="Recuperados", figsize=(20, 10))
 ()
 ()
+
+# 29. Grafique las curvas de contagio, muerte y recuperación de las 10,
+# ciudades con mas casos de contagiados acumulados
+df.groupby('Nombre municipio').size().sort_values(ascending=False).head
+(10).plot(label="Contagios", figsize=(20, 10))
+Fallecidos = df[df['Ubicación del caso'] == 'Fallecido']
+Fallecidos.groupby('Nombre municipio').size().sort_values(ascending=False).head
+(10).plot(label="Fallecidos", figsize=(20, 10))
+Recuperado = df[df['Recuperado'] == 'Recuperado']
+Recuperado.groupby('Nombre municipio').size().sort_values(ascending=False).head
+(10).plot(label="Recuperados", figsize=(20, 10))
+()
+()
+
+Recuperado = df[df['Recuperado'] == 'Recuperado']
+Recuperado.groupby('Nombre municipio').size().sort_values(ascending=False).head
+(10).plot(label="Recuperados", figsize=(20, 10))
+()
+()
+()
+
+# 30.Liste de mayor a menor la cantidad de fallecidos x edad en toda Colombia
+falleEdad = df[df['Ubicación del caso'] == 'Fallecido'].groupby
+('Edad').size().sort_values(ascending=False)
+print("Punto 30")
+print(falleEdad)
+print()
+
+falleEdad = df[df['Ubicación del caso'] == 'Fallecido'].groupby
+('Edad').size().sort_values(ascending=False)
+print("Punto 30")
+print(falleEdad)
+print()
+
+
