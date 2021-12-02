@@ -269,3 +269,9 @@ df.groupby(['Ubicación del caso']).size
 df.groupby(['Sexo']).size().sort_values(ascending=False).plot(kind='bar')
 df.groupby(['Sexo']).size().sort_values(ascending=False).plot(kind='bar')
 df.groupby(['Sexo']).size().sort_values(ascending=False).plot(kind='bar')
+
+# 34. Haga un gráfico de barras por tipo de toda Colombia
+df.groupby(['Tipo de contagio']).size
+().sort_values(ascending=False).plot(kind='bar')
+df.groupby(['Tipo de contagio']).size
+().sort_values(ascending=False).plot(kind='bar')
